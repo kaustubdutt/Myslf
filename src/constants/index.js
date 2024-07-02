@@ -1,3 +1,24 @@
+import {
+  RxCrop,
+  RxDesktop,
+  RxPencil2,
+  RxReader,
+  RxRocket,
+  RxAccessibility,
+} from "react-icons/rx";
+import { IoIosSchool } from "react-icons/io";
+import { SiLeetcode, SiGithub } from "react-icons/si";
+import { PiCertificateFill } from "react-icons/pi";
+
+
+
+import SpaceCity1 from "../assets/SpaceCity1.jpg";
+import SpaceCity5 from "../assets/SpaceCity5.jpeg";
+import SpaceCity6 from "../assets/SpaceCity6.jpg";
+import SpaceCity7 from "../assets/SpaceCity7.jpeg";
+import SpaceCity8 from "../assets/SpaceCity8.jpeg";
+import SpaceCity9 from "../assets/SpaceCity9.jpg";
+
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
@@ -88,3 +109,31 @@ export const CONTACT = {
   phoneNo: "+1 3159574215 ",
   email: "kthiruma@syr.edu",
 };
+
+export const ServiceData = [
+  {
+    icon: IoIosSchool,
+    title: "Education",
+    content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+    backgroundImage: SpaceCity6,
+  },
+  {
+    icon: SiGithub,
+    title: "Github",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    backgroundImage: SpaceCity9,
+  },
+  {
+    icon: SiLeetcode,
+    title: "Leetcode",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    backgroundImage: SpaceCity1,
+  },
+  {
+    icon: PiCertificateFill,
+    title: "Certifications",
+    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    backgroundImage: SpaceCity7,
+  },
+
+];
