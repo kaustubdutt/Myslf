@@ -1,23 +1,14 @@
-import {
-  RxCrop,
-  RxDesktop,
-  RxPencil2,
-  RxReader,
-  RxRocket,
-  RxAccessibility,
-} from "react-icons/rx";
+
 import { IoIosSchool } from "react-icons/io";
 import { SiLeetcode, SiGithub } from "react-icons/si";
 import { PiCertificateFill } from "react-icons/pi";
 
 
 
-import SpaceCity1 from "../assets/SpaceCity1.jpg";
-import SpaceCity5 from "../assets/SpaceCity5.jpeg";
-import SpaceCity6 from "../assets/SpaceCity6.jpg";
-import SpaceCity7 from "../assets/SpaceCity7.jpeg";
-import SpaceCity8 from "../assets/SpaceCity8.jpeg";
-import SpaceCity9 from "../assets/SpaceCity9.jpg";
+import carousel1 from "../assets/carousel1.png";
+import carousel2 from "../assets/carousel2.png";
+import carousel3 from "../assets/carousel3.png";
+import carousel4 from "../assets/carousel4.png";
 
 import project1 from "../assets/projects/project-1.jpg";
 import project2 from "../assets/projects/project-2.jpg";
@@ -115,25 +106,25 @@ export const ServiceData = [
     icon: IoIosSchool,
     title: "Education",
     content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
-    backgroundImage: SpaceCity6,
+    backgroundImage: carousel1,
   },
   {
     icon: SiGithub,
     title: "Github",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: SpaceCity9,
+    backgroundImage: carousel2,
   },
   {
     icon: SiLeetcode,
     title: "Leetcode",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: SpaceCity1,
+    backgroundImage: carousel3, 
   },
   {
     icon: PiCertificateFill,
     title: "Certifications",
     content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    backgroundImage: SpaceCity7,
+    backgroundImage: carousel4,
   },
 
 ];
