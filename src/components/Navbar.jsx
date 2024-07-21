@@ -1,29 +1,101 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../assets/KaustubDutt_Logo.png";
 import { FaLinkedin, FaGithub, FaInstagram, } from "react-icons/fa";
 import { SiLeetcode } from "react-icons/si";
+import { NAVIGATION_LINKS } from "../constants";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
+
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handleLinkClick = (e, href) => {
+    e.preventDefault();
+    const targetElement = document.querySelector(href);
+    if (targetElement) {
+      const offset = -85;
+      const elementPosition = targetElement.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.scrollY + offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+    setIsMobileMenuOpen(false);
+  };
+
   return (
-    <nav className="mb-20 flex items-center justify-between py-6">
-      <div className="flex flex-shrink-0 items-center">
-        <img className="mx-2 w-14" src={logo} alt="logo" />
-      </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
-        <a href="https://linkedin.com/in/kaustub-dutt-thirumala-a1486a12b" target="_blank" rel="noopener noreferrer" className="group">
-          <FaLinkedin className="text-white group-hover:text-sky-500 transition-colors duration-200" />
-        </a>
-        <a href="https://github.com/kaustubdutt" target="_blank" rel="noopener noreferrer" className="group">
-          <FaGithub className="text-white group-hover:text-gray-400 transition-colors duration-200" />
-        </a>
-        <a href="https://leetcode.com/u/kaustubdutt/" target="_blank" rel="noopener noreferrer" className="group">
-          <SiLeetcode className="text-white group-hover:text-orange-400 transition-colors duration-200" />
-        </a>
-        <a href="https://www.instagram.com/kaustub_helioz/" target="_blank" rel="noopener noreferrer" className="group">
-          <FaInstagram className="text-white group-hover:text-pink-300 transition-colors duration-200" />
-        </a>
-      </div>
-    </nav>
+    <div>
+      <nav className="mb-100 fixed left-0 right-0 top-4 z-50">
+        {/* Desktop Menu */}
+        <div className="mx-auto hidden max-w-2xl items-center justify-center rounded-lg bg-blue/20 py-3 backdrop-blur-lg lg:flex">
+          <div className="flex justify-between gap-6">
+            <div>
+              <ul className="flex items-center gap-4">
+                {NAVIGATION_LINKS.map((item, index) => (
+                  <li key={index}>
+                    <a
+                      className="text-sm hover:text-indigo-400"
+                      href={item.href}
+                      onClick={(e) => handleLinkClick(e, item.href)}
+                    >
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+        {/* Mobile Menu */}
+        <div className="rounded-lg backdrop-blur-md lg:hidden">
+          <div className="flex items-center justify-between">
+            <div>
+              <a href="#">
+                <img src={logo} width={30} alt="Logo" className="m-2" />
+              </a>
+            </div>
+            <div className="flex items-center">
+              <button
+                className="focus:outline-none lg:hidden"
+                onClick={toggleMobileMenu}
+              >
+                {isMobileMenuOpen ? (
+                  <FaTimes className="m-2 h-6 w-5" />
+                ) : (
+                  <FaBars className="m-2 h-6 w-5" />
+                )}
+              </button>
+            </div>
+          </div>
+          {isMobileMenuOpen && (
+            <ul className="ml-4 mt-4 flex flex-col gap-4 backdrop-blur-md">
+              {NAVIGATION_LINKS.map((item, index) => (
+                <li key={index}>
+                  <a
+                    className="block w-full text-xl font-semibold"
+                    href={item.href}
+                    onClick={(e) => handleLinkClick(e, item.href)}
+                  >
+                    {item.label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          
+        </div>
+
+      </nav>
+    </div>
   );
 };
 

@@ -15,11 +15,18 @@ import project2 from "../assets/projects/project-2.jpg";
 import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 
-export const HERO_CONTENT = `I am a passionate full stack developer with a knack for crafting robust and scalable web applications. With 5 years of hands-on experience, I have honed my skills in front-end technologies like React and Next.js, as well as back-end technologies like Node.js, MySQL, PostgreSQL, and MongoDB. My goal is to leverage my expertise to create innovative solutions that drive business growth and deliver exceptional user experiences.`;
+export const HERO_CONTENT = `As a dedicated full stack developer with over 3 years of experience, I specialize in creating robust and scalable web applications using front-end technologies like React and Next.js, alongside back-end technologies such as Node.js, MySQL, PostgreSQL, and MongoDB. Currently, I am working on an ECS internship at Syracuse University, where I am developing a comprehensive project using Next.js and React.js for the front end, with Django powering the back end. My professional journey focuses on delivering innovative solutions that drive business growth and enhance user experiences. I have developed and deployed a comprehensive water tank management system utilizing IoT for real-time monitoring and automation, and implemented sentiment analysis models and machine learning algorithms to support social initiatives and combat misinformation. Additionally, I have led the creation and execution of TRIRIGA data migrations and integrations, utilizing tools such as Integration Objects and Data Integrator`;
 
 export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer with a passion for creating efficient and user-friendly web applications. With 5 years of professional experience, I have worked with a variety of technologies, including React, Next.js, Node.js, MySQL, PostgreSQL, and MongoDB. My journey in web development began with a deep curiosity for how things work, and it has evolved into a career where I continuously strive to learn and adapt to new challenges. I thrive in collaborative environments and enjoy solving complex problems to deliver high-quality solutions. Outside of coding, I enjoy staying active, exploring new technologies, and contributing to open-source projects.`;
 
 export const EXPERIENCES = [
+  {
+    year: "July 2024 - Present",
+    role: "Full Stack Developer Intern",
+    company: "Syracuse University",
+    description: `I am developing a comprehensive web applications utilizing Next.js and React.js for the front end, with Django serving as the back end. This project involves building scalable and robust features that enhance user experience and functionality. My role includes designing and implementing complex user interfaces, integrating APIs, and ensuring seamless communication between the front-end and back-end systems.`,
+    technologies: ["React","Next JS","Django","Mongo DB"],
+  },
   {
     year: "May 2022 - June 2022",
     role: "Associate Software Developer",
@@ -128,3 +135,12 @@ export const ServiceData = [
   },
 
 ];
+
+export const NAVIGATION_LINKS = [
+  { label: "About", href: "#about" },
+  { label: "Skills", href: "#technologies" },
+  { label: "Experience", href: "#experience" },
+  { label: "Projects", href: "#projects" },
+  { label: "Contact", href: "#contact" },
+];
+
