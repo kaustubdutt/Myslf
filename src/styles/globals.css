@@ -1,0 +1,10 @@
+/* src/styles/globals.css */
+.shadow-custom {
+    box-shadow: 0 4px 8px #a955f718, 0 6px 20px #a955f718;
+  }
+  
+  .shadow-custom:hover {
+    box-shadow: 0 4px 16px rgba(255,0,182,0.35), 0 6px 30px rgba(255,0,182,0.35);
+  }
+  
+  
