@@ -59,46 +59,36 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
-    title: "E-Commerce Website",
+    title: "AgroCompanion",
     image: project1,
     description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "The system uses IoT sensors to monitor real-time weather conditions like temperature, humidity, and soil moisture, while regulating water levels to reduce waste. A Random Forest Regressor model predicts crop yield with 87.5% accuracy, optimizing crop health and production.",
+    technologies: ["Python", "Flask", "Firebase", "Java Script", "IoT","ML"],
+    link: "https://github.com/kaustubdutt/Agrocompanion", 
   },
   {
-    title: "Task Management App",
+    title: "Unmasking Misinformation using NLP Techniques",
     image: project2,
     description:
-      "An application for managing tasks and projects, with features such as task creation, assignment, and progress tracking.",
-    technologies: ["HTML", "CSS", "Angular", "Firebase"],
+      "This project uses NLP with embeddings like TF-IDF, GloVe, and BERT on the LIAR dataset to detect misinformation. Machine learning and deep learning models (Naive Bayes, SVM, CNN, LSTM) were trained, showing the impact of embedding-model combinations on accuracy.",
+    technologies: ["NLP", "ML", "Python"],
+    link: "https://github.com/kaustubdutt/Unmasking-Misinformation-using-NLP-Techniques", 
   },
   {
-    title: "Portfolio Website",
+    title: "From Tweets to Hope",
     image: project3,
     description:
-      "A personal portfolio website showcasing projects, skills, and contact information.",
-    technologies: ["HTML", "CSS", "React", "Bootstrap"],
+      "This project applies sentiment analysis on Twitter data using TextBlob, VADER, and Flair to detect tweets needing help and support, focusing on positive tweets to identify resources and volunteers.",
+    technologies: ["NLP", "ML", "Python"],
+    link: "https://github.com/kaustubdutt/Tweets-To-Hope",
   },
   {
-    title: "Blogging Platform",
+    title: "BBC Text Classification using BERT",
     image: project4,
     description:
-      "A platform for creating and publishing blog posts, with features like rich text editing, commenting, and user profiles.",
-    technologies: ["HTML", "CSS", "Vue.js", "Express", "mySQL"],
-  },
-  {
-    title: "E-Commerce Website",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
-  },
-  {
-    title: "E-Commerce Website",
-    image: project1,
-    description:
-      "A fully functional e-commerce website with features like product listing, shopping cart, and user authentication.",
-    technologies: ["HTML", "CSS", "React", "Node.js", "MongoDB"],
+      "This project classifies BBC articles into five categories using BERT embeddings with a dense classifier and LSTM, achieving up to 97% accuracy. BERT outperforms TF-IDF, though the margin is small due to the clarity of the news articles.",
+    technologies: ["BERT", "LSTM", "TF-IDF", "RNN", "Random Forest"],
+    link: "https://github.com/kaustubdutt/Text-Classification-BERT",
   },
 ];
 
@@ -112,25 +102,25 @@ export const ServiceData = [
   {
     icon: IoIosSchool,
     title: "Education",
-    content: "Lorem ipsum dolor sit /amet, consectetur adipiscing elit.",
+    content: ["Syracuse University (NY, USA) Masters in CS, CGPA : 3.7/4, JNTUH (Hyderabad, INDIA) B.Tech in CS, CGPA: 6.95/10"],
     backgroundImage: carousel1,
   },
   {
     icon: SiGithub,
     title: "Github",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content: "Go to my Github",
     backgroundImage: carousel2,
   },
   {
     icon: SiLeetcode,
     title: "Leetcode",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content: "Go to my Leetcode",
     backgroundImage: carousel3, 
   },
   {
     icon: PiCertificateFill,
     title: "Certifications",
-    content: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    content: "",
     backgroundImage: carousel4,
   },
 
