@@ -46,10 +46,10 @@ const Contact = () => {
 
       emailjs
         .send(
-          "service_qir9np7", // Replace with your EmailJS service ID
+          "service_4i8xyg6", // Replace with your EmailJS service ID
           "template_4dj0jym", // Replace with your EmailJS template ID
           formData,
-          "U5kfz6Hibmk8j3_3c",
+          "V4Ap1ebxR-kvmuvRZgigit ",
         )
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);

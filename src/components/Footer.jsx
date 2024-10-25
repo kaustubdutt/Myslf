@@ -11,7 +11,7 @@ const Footer = () => {
         <nav className="flex items-center justify-between py-6">
           <div className="m-8 flex items-center justify-center gap-4 text-2xl">
             <a
-              href="https://linkedin.com/in/kaustub-dutt-thirumala-a1486a12b"
+              href="https://linkedin.com/in/kaustub-dutt-thirumala"
               target="_blank"
               rel="noopener noreferrer"
               className="group"
