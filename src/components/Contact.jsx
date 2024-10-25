@@ -49,7 +49,7 @@ const Contact = () => {
           "service_4i8xyg6", // Replace with your EmailJS service ID
           "template_4dj0jym", // Replace with your EmailJS template ID
           formData,
-          "V4Ap1ebxR-kvmuvRZgigit ",
+          "V4Ap1ebxR-kvmuvRZ",
         )
         .then((response) => {
           console.log("SUCCESS!", response.status, response.text);
